@@ -128,22 +128,22 @@ export class Test3 extends React.Component {
     this.viewHeight = window.height - StatusBar.currentHeight;
 
     let imageUtil = new MyImageUtil();
-    imageUtil.getImageStyle(this.props.uri, 100, 0, this.viewWidth / 3, this.viewWidth / 2).then(imageStyle => {
+    imageUtil.getImageStyle(this.props.uri, 100, 0, this.viewWidth / 3, this.viewWidth / 2, imageStyle => {
       this.setState({ imageStyle1: imageStyle });
     });
-    imageUtil.getImageStyle(this.props.uri, 50, 0, this.viewWidth / 3, this.viewWidth / 2).then(imageStyle => {
+    imageUtil.getImageStyle(this.props.uri, 50, 0, this.viewWidth / 3, this.viewWidth / 2, imageStyle => {
       this.setState({ imageStyle2: imageStyle });
     });
-    imageUtil.getImageStyle(this.props.uri, 0, 0, this.viewWidth / 3, this.viewWidth / 2).then(imageStyle => {
+    imageUtil.getImageStyle(this.props.uri, 0, 0, this.viewWidth / 3, this.viewWidth / 2, imageStyle => {
       this.setState({ imageStyle3: imageStyle });
     });
-    imageUtil.getImageStyle(this.props.uri, 0, 100, this.viewWidth / 2, this.viewWidth / 3).then(imageStyle => {
+    imageUtil.getImageStyle(this.props.uri, 0, 100, this.viewWidth / 2, this.viewWidth / 3, imageStyle => {
       this.setState({ imageStyle4: imageStyle });
     });
-    imageUtil.getImageStyle(this.props.uri, 0, 50, this.viewWidth / 2, this.viewWidth / 3).then(imageStyle => {
+    imageUtil.getImageStyle(this.props.uri, 0, 50, this.viewWidth / 2, this.viewWidth / 3, imageStyle => {
       this.setState({ imageStyle5: imageStyle });
     });
-    imageUtil.getImageStyle(this.props.uri, 0, 0, this.viewWidth / 2, this.viewWidth / 3).then(imageStyle => {
+    imageUtil.getImageStyle(this.props.uri, 0, 0, this.viewWidth / 2, this.viewWidth / 3, imageStyle => {
       this.setState({ imageStyle6: imageStyle });
     });
   }
